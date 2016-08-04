@@ -18,6 +18,8 @@
 
   "files": [
     "main.ts",
-    "typings.d.ts"
+    "typings.d.ts",
+    "app/list/list.component.ts",
+    "app/create/create.component.ts"
   ]
 }

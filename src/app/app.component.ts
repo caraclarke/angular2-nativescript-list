@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import {Component} from "@angular/core";
+import {ROUTER_DIRECTIVES} from "@angular/router";
 
 @Component({
   moduleId: module.id,
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  selector: "app-root",
+  directives: [ROUTER_DIRECTIVES],
+  templateUrl: "<router-outlet></router-outlet>"
 })
+
 export class AppComponent {
-  title = 'app works!';
+  title = "App";
 }
+
+/*
+
+  this code says that we want this TS file to act as our main routing outlet
+
+  all child pages and components will flow through this file because of router-outlet tag
+
+*/
