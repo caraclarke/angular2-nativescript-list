@@ -1,10 +1,10 @@
-import { bootstrap } from "@angular/platform-browser-dynamic";
-import { enableProdMode } from "@angular/core";
-import { provideRouter, RouterConfig } from "@angular/router";
-import { AppComponent, environment } from "./app/";
+import { bootstrap } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
+import { provideRouter, RouterConfig } from '@angular/router';
+import { AppComponent, environment } from './app/';
 
-import { ListComponent } from "./app/list/list.component";
-import { CreateComponent } from "./app/create/create.component";
+import { ListComponent } from './app/list/list.component';
+import { CreateComponent } from './app/create/create.component';
 
 if (environment.production) {
   enableProdMode();
@@ -22,7 +22,6 @@ export const AppRoutes: RouterConfig = [
 ]
 
 bootstrap(AppComponent, [provideRouter(AppRoutes)]);
-
 
 /*
 

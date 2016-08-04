@@ -1,11 +1,11 @@
-import {Component} from "@angular/core";
-import {ROUTER_DIRECTIVES} from "@angular/router";
+import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from "@angular/router";
 
 @Component({
   moduleId: module.id,
   selector: "app-root",
   directives: [ROUTER_DIRECTIVES],
-  templateUrl: "<router-outlet></router-outlet>"
+  template: "<router-outlet></router-outlet>"
 })
 
 export class AppComponent {
